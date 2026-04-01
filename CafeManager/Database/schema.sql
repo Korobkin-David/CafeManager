@@ -1,15 +1,11 @@
---Vytvoření databáze
-CREATE DATABASE IF NOT EXISTS CafeManager;
-
-USE CafeManager;       
-       
 -- role
-CREATE TABLE roles (
+CREATE TABLE IF NOT EXISTS roles (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(25) NOT NULL
 );
+
 -- users
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     surname VARCHAR(50) NOT NULL,
@@ -20,22 +16,22 @@ CREATE TABLE users (
 );
 
 -- sklad (ingredience pro menu)
-CREATE TABLE ingredients (
+CREATE TABLE IF NOT EXISTS ingredients (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    unit VARCHAR(20) NOT NULL,       -- kg, l, ks...
+    unit VARCHAR(20) NOT NULL,
     quantity DECIMAL(10,3) NOT NULL DEFAULT 0,
-    min_quantity DECIMAL(10,3) NOT NULL DEFAULT 0  -- práh upozornění (pak se bude odesílat upozornění)
+    min_quantity DECIMAL(10,3) NOT NULL DEFAULT 0
 );
 
 -- kategorie v menu
-CREATE TABLE categories (
+CREATE TABLE IF NOT EXISTS categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50)
 );
 
 -- menu
-CREATE TABLE menu (
+CREATE TABLE IF NOT EXISTS menu (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     description VARCHAR(100) NOT NULL,
@@ -45,16 +41,16 @@ CREATE TABLE menu (
     FOREIGN KEY (category_id) REFERENCES categories(id)
 );
 
--- Stoly
-CREATE TABLE tables_cafe (
-     id INT AUTO_INCREMENT PRIMARY KEY,
-     number INT NOT NULL,
-     capacity INT NOT NULL DEFAULT 4,
-     status ENUM('free','occupied') DEFAULT 'free'
+-- stoly
+CREATE TABLE IF NOT EXISTS tables_cafe (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    number INT NOT NULL,
+    capacity INT NOT NULL DEFAULT 4,
+    status ENUM('free','occupied') DEFAULT 'free'
 );
 
--- Objednávky
-CREATE TABLE orders (
+-- objednávky
+CREATE TABLE IF NOT EXISTS orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
     table_id INT NOT NULL,
     user_id INT NOT NULL,
@@ -66,13 +62,19 @@ CREATE TABLE orders (
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
--- Objednávky - položky
-CREATE TABLE order_items (
-     id INT AUTO_INCREMENT PRIMARY KEY,
-     order_id INT NOT NULL,
-     menu_id INT NOT NULL,
-     quantity INT NOT NULL DEFAULT 1,
-     unit_price DECIMAL(8,2) NOT NULL,
-     FOREIGN KEY (order_id) REFERENCES orders(id),
-     FOREIGN KEY (menu_item_id) REFERENCES menu(id)
+-- objednávky - položky
+CREATE TABLE IF NOT EXISTS order_items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT NOT NULL,
+    menu_id INT NOT NULL,
+    quantity INT NOT NULL DEFAULT 1,
+    unit_price DECIMAL(8,2) NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES orders(id),
+    FOREIGN KEY (menu_id) REFERENCES menu(id)
 );
+
+-- zajistí že role již existují a nevzniknou duplicity
+INSERT IGNORE INTO roles (id, name) VALUES
+(1, 'administrator'),
+(2, 'supervisor'),
+(3, 'worker');
