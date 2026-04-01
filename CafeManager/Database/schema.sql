@@ -1,3 +1,8 @@
+--Vytvoření databáze
+CREATE DATABASE IF NOT EXISTS CafeManager;
+
+USE CafeManager;       
+       
 -- role
 CREATE TABLE roles (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
