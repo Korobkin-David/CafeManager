@@ -1,10 +1,11 @@
+using System.Windows;
 using System.Windows.Controls;
 
 namespace CafeManager.Pages;
 
-public partial class login_register : Page
+public partial class register : Window
 {
-    public login_register()
+    public register()
     {
         InitializeComponent();
     }

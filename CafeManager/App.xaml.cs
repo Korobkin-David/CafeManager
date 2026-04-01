@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows;
 using CafeManager.Database;
+using CafeManager.Pages;
 
 namespace CafeManager
 {
@@ -10,7 +11,7 @@ namespace CafeManager
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-
+            
             new DatabaseHelper().Initialize();
         }
     }
