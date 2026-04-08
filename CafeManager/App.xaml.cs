@@ -12,7 +12,7 @@ namespace CafeManager
         {
             base.OnStartup(e);
             
-            new DatabaseHelper().Initialize();
+            new Database.Database().Initialize();
         }
     }
 };

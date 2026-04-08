@@ -15,13 +15,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8d46b6d2-a412-4607-b7d0-0607e4c38323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CafeManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CafeManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafeManager/Database/database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Database/database.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafeManager/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/App.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/Database/database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Database/Database.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafeManager/Pages/Login.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Login.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafeManager/Pages/Login.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Login.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/Pages/Menu.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Menu.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafeManager/Pages/Register.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Register.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafeManager/Pages/Register.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Register.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafeManager/Styles/Styles.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Styles/Styles.xaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,7 @@
       <updated>1775034755482</updated>
       <workItem from="1775034756064" duration="2532000" />
       <workItem from="1775041958173" duration="4650000" />
-      <workItem from="1775628124666" duration="14143000" />
+      <workItem from="1775628124666" duration="17056000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -163,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775639184362</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="almost finished styles for login and register - added next page menu for future app">
+      <option name="closed" value="true" />
+      <created>1775642346629</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775642346629</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +197,8 @@
     <MESSAGE value="Pages, sidebar and updated database that is now working correctly" />
     <MESSAGE value="prihlasovaci formular" />
     <MESSAGE value="styles of login and register almost finished and switching between login and register is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="styles of login and register almost finished and switching between login and register is done" />
+    <MESSAGE value="almost finished styles for login and register - added next page menu for future app" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost finished styles for login and register - added next page menu for future app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

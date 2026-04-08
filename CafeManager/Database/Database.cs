@@ -4,7 +4,7 @@ using System.IO;
 
 namespace CafeManager.Database
 {
-    public class DatabaseHelper
+    public class Database
     {
         private const string Server = "Server=localhost;Port=3306;User=root;Password=;";
         private const string WithDb = "Server=localhost;Port=3306;Database=CafeManager;User=root;Password=;";

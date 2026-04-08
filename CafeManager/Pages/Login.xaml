@@ -25,7 +25,7 @@
         <Label Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="White">Přihlášení</Label>
         <TextBox x:Name="emailInput" Style="{StaticResource TextBoxStyle}" Tag="Email:" Grid.Column="1" Grid.Row="2"/>
         <PasswordBox x:Name="password" Style="{StaticResource PasswordBoxStyle}" Tag="Heslo:" Grid.Column="1" Grid.Row="3"/>
-        <Button Style="{StaticResource SubmitBtnStyle}" Grid.Column="1" Grid.Row="4" >Přihlásit se</Button>
+        <Button Click="LoginButton_Click" Style="{StaticResource SubmitBtnStyle}" Grid.Column="1" Grid.Row="4" >Přihlásit se</Button>
         <Button Click="RegisterButton_Click" Style="{StaticResource SwitchButtonStyle}" Grid.Column="1" Grid.Row="5" >Vytvořit účet</Button>
     </Grid>
 </Page>

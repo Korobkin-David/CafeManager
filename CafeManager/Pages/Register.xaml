@@ -29,7 +29,7 @@
         <TextBox x:Name="nameInput" Style="{StaticResource TextBoxStyle}" Tag="Jméno:" Grid.Column="1" Grid.Row="2"/>
         <TextBox x:Name="surnameInput" Style="{StaticResource TextBoxStyle}" Tag="Příjmení:" Grid.Column="1" Grid.Row="3"/>
         <TextBox x:Name="emailInput" Style="{StaticResource TextBoxStyle}" Tag="Email:" Grid.Column="1" Grid.Row="4"/>
-        <TextBox x:Name="passwordInput" Style="{StaticResource TextBoxStyle}" Tag="Heslo:" Grid.Column="1" Grid.Row="5"/>
+        <PasswordBox x:Name="passwordInput" Style="{StaticResource PasswordBoxStyle}" Tag="Heslo:" Grid.Column="1" Grid.Row="5"/>
         <Button x:Name="roleInput"
                 Grid.Column="1"
                 Grid.Row="6"
@@ -38,13 +38,13 @@
                 Click="roleInput_Click">
             <Button.ContextMenu>
                 <ContextMenu>
-                    <MenuItem Header="administrator" />
-                    <MenuItem Header="supervisor" />
-                    <MenuItem Header="worker" />
+                    <MenuItem Header="administrator" Click="RoleMenuItem_Click"/>
+                    <MenuItem Header="supervisor" Click="RoleMenuItem_Click"/>
+                    <MenuItem Header="worker" Click="RoleMenuItem_Click"/>
                 </ContextMenu>
             </Button.ContextMenu>
         </Button>
-        <Button Grid.Column="1" Grid.Row="7" Style="{StaticResource SubmitBtnStyle}">Vytvořit účet</Button>
+        <Button Click="RegisterButtonClick" Grid.Column="1" Grid.Row="7" Style="{StaticResource SubmitBtnStyle}">Vytvořit účet</Button>
         <Button Click="BackToLoginButton_Click" Grid.Column="1" Grid.Row="8" Style="{StaticResource SubmitBtnStyle}">Přihlásit se</Button>
     </Grid>
 </Page>
