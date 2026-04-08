@@ -1,0 +1,62 @@
+<Page x:Class="CafeManager.Pages.Register"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:CafeManager.Pages"
+      mc:Ignorable="d"
+      Title="Register" Height="600" Width="800"
+      Background="{StaticResource PrimaryBackgroundBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="White">Vytvoření účtu</Label>
+        <TextBox x:Name="nameInput" Style="{StaticResource TextBoxStyle}" Tag="Jméno:" Grid.Column="1" Grid.Row="2"/>
+        <TextBox x:Name="surnameInput" Style="{StaticResource TextBoxStyle}" Tag="Příjmení:" Grid.Column="1" Grid.Row="3"/>
+        <TextBox x:Name="emailInput" Style="{StaticResource TextBoxStyle}" Tag="Email:" Grid.Column="1" Grid.Row="4"/>
+        <TextBox x:Name="passworInput" Style="{StaticResource TextBoxStyle}" Tag="Heslo:" Grid.Column="1" Grid.Row="5"/>
+        <Button x:Name="roleInput"
+                Grid.Column="1"
+                Grid.Row="6"
+                Content="Vyberte roli"
+                Style="{StaticResource ButtonContextMenuStyle}"
+                Click="roleInput_Click">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="admin" />
+                    <MenuItem Header="vedouci" />
+                    <MenuItem Header="user" />
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="7" Style="{StaticResource SubmitBtnStyle}">Vytvořit účet</Button>
+        <Button Click="BackToLoginButton_Click" Grid.Column="1" Grid.Row="8" Style="{StaticResource SubmitBtnStyle}">Přilásit se</Button>
+    </Grid>
+    <!--
+        CREATE TABLE IF NOT EXISTS users (
+            id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(50) NOT NULL,
+            surname VARCHAR(50) NOT NULL,
+            email VARCHAR(100) NOT NULL,
+            passwordhash VARCHAR(255) NOT NULL,
+            role_id INT NOT NULL,
+            FOREIGN KEY (role_id) REFERENCES roles(id)
+        );
+    -->
+    
+</Page>

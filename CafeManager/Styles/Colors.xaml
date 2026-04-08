@@ -1,0 +1,26 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Background Color-->
+    <Color x:Key="PrimaryBackgroundColor">#6097FC</Color>
+    <SolidColorBrush x:Key="PrimaryBackgroundBrush" Color="{StaticResource PrimaryBackgroundColor}"/>
+    
+    <!-- Submit Button Color-->
+    <Color x:Key="SubmitBtnBackgroundColor">#204EF5</Color>
+    <SolidColorBrush x:Key="SubmitBtnBrush" Color="{StaticResource SubmitBtnBackgroundColor}"/>
+    <Color x:Key="SubmitBtnHoverColor">#4D72F7</Color>
+    <SolidColorBrush x:Key="SubmitBtnHoverBrush" Color="{StaticResource SubmitBtnHoverColor}"/>
+    
+    <!-- Switch Button Color-->
+    <Color x:Key="SwitchBtnBackgroundColor">#204EF5</Color>
+    <SolidColorBrush x:Key="SwitchBtnBrush" Color="{StaticResource SwitchBtnBackgroundColor}"/>
+    <Color x:Key="SwitchBtnHoverColor">#4D72F7</Color>
+    <SolidColorBrush x:Key="SwBtnHoverBrush" Color="{StaticResource SwitchBtnHoverColor}"/>
+    
+    <!-- TextBox and Placeholder Colors-->
+    <Color x:Key="TextBoxBackgroundColor">#4E8CFC</Color>
+    <SolidColorBrush x:Key="TextBoxBrush" Color="{StaticResource TextBoxBackgroundColor}"/>
+    <Color x:Key="TextBoxBorderColor">#4266F5</Color>
+    <SolidColorBrush x:Key="TextBoxBorderBrush" Color="{StaticResource TextBoxBorderColor}"/>
+    <Color x:Key="PlaceholderTextColor">#E0EBFF</Color>
+    <SolidColorBrush x:Key="PlaceholderTextBrush" Color="{StaticResource PlaceholderTextColor}"/>
+</ResourceDictionary>

@@ -78,3 +78,4 @@ INSERT IGNORE INTO roles (id, name) VALUES
 (1, 'administrator'),
 (2, 'supervisor'),
 (3, 'worker');
+       

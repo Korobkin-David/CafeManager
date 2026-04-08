@@ -14,11 +14,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d46b6d2-a412-4607-b7d0-0607e4c38323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CafeManager/Pages/login.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CafeManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CafeManager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafeManager/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/App.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafeManager/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/App.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafeManager/Pages/login_register.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafeManager/Pages/login_register.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/login.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/Database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Database/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/Pages/login.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Login.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/Pages/login.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Login.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/Pages/register.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Register.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/Pages/register.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Register.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +120,8 @@
       <option name="presentableId" value="Default" />
       <updated>1775034755482</updated>
       <workItem from="1775034756064" duration="2532000" />
-      <workItem from="1775041958173" duration="4546000" />
+      <workItem from="1775041958173" duration="4650000" />
+      <workItem from="1775628124666" duration="10705000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -142,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775044879573</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="prihlasovaci formular">
+      <option name="closed" value="true" />
+      <created>1775046533322</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775046533322</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +179,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="schéma databáze a stažené balíčky Nuget" />
     <MESSAGE value="Pages, sidebar and updated database that is now working correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pages, sidebar and updated database that is now working correctly" />
+    <MESSAGE value="prihlasovaci formular" />
+    <option name="LAST_COMMIT_MESSAGE" value="prihlasovaci formular" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
