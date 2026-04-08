@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:CafeManager.Pages"
       mc:Ignorable="d"
-      Title="Register" Height="600" Width="800"
+      Title="Register"
       Background="{StaticResource PrimaryBackgroundBrush}">
     <Grid>
         <Grid.RowDefinitions>
@@ -29,7 +29,7 @@
         <TextBox x:Name="nameInput" Style="{StaticResource TextBoxStyle}" Tag="Jméno:" Grid.Column="1" Grid.Row="2"/>
         <TextBox x:Name="surnameInput" Style="{StaticResource TextBoxStyle}" Tag="Příjmení:" Grid.Column="1" Grid.Row="3"/>
         <TextBox x:Name="emailInput" Style="{StaticResource TextBoxStyle}" Tag="Email:" Grid.Column="1" Grid.Row="4"/>
-        <TextBox x:Name="passworInput" Style="{StaticResource TextBoxStyle}" Tag="Heslo:" Grid.Column="1" Grid.Row="5"/>
+        <TextBox x:Name="passwordInput" Style="{StaticResource TextBoxStyle}" Tag="Heslo:" Grid.Column="1" Grid.Row="5"/>
         <Button x:Name="roleInput"
                 Grid.Column="1"
                 Grid.Row="6"
@@ -38,25 +38,13 @@
                 Click="roleInput_Click">
             <Button.ContextMenu>
                 <ContextMenu>
-                    <MenuItem Header="admin" />
-                    <MenuItem Header="vedouci" />
-                    <MenuItem Header="user" />
+                    <MenuItem Header="administrator" />
+                    <MenuItem Header="supervisor" />
+                    <MenuItem Header="worker" />
                 </ContextMenu>
             </Button.ContextMenu>
         </Button>
         <Button Grid.Column="1" Grid.Row="7" Style="{StaticResource SubmitBtnStyle}">Vytvořit účet</Button>
-        <Button Click="BackToLoginButton_Click" Grid.Column="1" Grid.Row="8" Style="{StaticResource SubmitBtnStyle}">Přilásit se</Button>
+        <Button Click="BackToLoginButton_Click" Grid.Column="1" Grid.Row="8" Style="{StaticResource SubmitBtnStyle}">Přihlásit se</Button>
     </Grid>
-    <!--
-        CREATE TABLE IF NOT EXISTS users (
-            id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(50) NOT NULL,
-            surname VARCHAR(50) NOT NULL,
-            email VARCHAR(100) NOT NULL,
-            passwordhash VARCHAR(255) NOT NULL,
-            role_id INT NOT NULL,
-            FOREIGN KEY (role_id) REFERENCES roles(id)
-        );
-    -->
-    
 </Page>

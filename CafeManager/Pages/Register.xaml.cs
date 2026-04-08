@@ -24,4 +24,13 @@ public partial class Register : Page
             btn.ContextMenu.IsOpen = true;
         }
     }
+
+    public void Registration()
+    {
+        string nameInput;
+        string surnameInput;
+        string emailInput;
+        string passwordInput;
+        string roleInput;
+    }
 }

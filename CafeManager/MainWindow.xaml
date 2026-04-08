@@ -1,6 +1,7 @@
 ﻿<Window x:Class="CafeManager.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="CafeManager" Height="600" Width="800">
-    <Frame x:Name="MainFrame"/>
+        Title="CafeManager" Height="600" Width="800"
+        WindowState="Maximized">
+    <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Source="Pages/Login.xaml"/>
 </Window>

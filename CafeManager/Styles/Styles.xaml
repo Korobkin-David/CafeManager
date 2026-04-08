@@ -20,7 +20,6 @@
                         <ContentPresenter HorizontalAlignment="Center"
                                           VerticalAlignment="Center"
                                           RecognizesAccessKey="True"/>
-                        
                     </Border>
                     <ControlTemplate.Triggers>
                         <!-- Hover efekt -->
@@ -113,6 +112,7 @@
         </Setter>
     </Style>
     
+    <!-- ButtonContextMenu -->
     <Style x:Key="ButtonContextMenuStyle" TargetType="Button">
         <Setter Property="Background" Value="{StaticResource TextBoxBrush}" />
         <Setter Property="BorderThickness" Value="1" />
@@ -144,6 +144,40 @@
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter TargetName="Border" Property="Opacity" Value="0.5" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!-- PasswordBox -->
+    <Style x:Key="PasswordBoxStyle" TargetType="PasswordBox">
+        <Setter Property="Background" Value="{StaticResource TextBoxBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Margin" Value="0,5,0,5"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="PasswordBox">
+                    <Grid>
+                        <Border CornerRadius="10"
+                                Background="{StaticResource TextBoxBorderBrush}"
+                                Padding="5">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                        <TextBlock x:Name="PlaceholderText"
+                                   Text="{TemplateBinding Tag}"
+                                   Style="{StaticResource PlaceholderTextStyle}"
+                                   FontSize="{TemplateBinding FontSize}"
+                                   IsHitTestVisible="False"
+                                   Visibility="Visible"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter TargetName="PlaceholderText" Property="Visibility" Value="Collapsed"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
