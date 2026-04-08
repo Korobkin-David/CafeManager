@@ -23,4 +23,10 @@
     <SolidColorBrush x:Key="TextBoxBorderBrush" Color="{StaticResource TextBoxBorderColor}"/>
     <Color x:Key="PlaceholderTextColor">#E0EBFF</Color>
     <SolidColorBrush x:Key="PlaceholderTextBrush" Color="{StaticResource PlaceholderTextColor}"/>
+    
+    <!-- Colors for button that changes personal settings -->
+    <Color x:Key="PersonalSettingsBtnColor">#3B82F6</Color>
+    <SolidColorBrush x:Key="PersSettBtnClrBrush" Color="{StaticResource PersonalSettingsBtnColor}"/>
+    <Color x:Key="PersonalSettingsBtnHoverColor">#2563EB</Color>
+    <SolidColorBrush x:Key="PersSettBtnClrHoverBrush" Color="{StaticResource PersonalSettingsBtnHoverColor}"/>
 </ResourceDictionary>

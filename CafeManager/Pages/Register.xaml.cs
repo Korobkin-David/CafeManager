@@ -36,7 +36,6 @@ public partial class Register : Page
         string email = emailInput.Text.Trim();
         string password = passwordInput.Password.Trim();
         
-        // Získání textu z obsahu tlačítka
         string role = roleInput.Content?.ToString(); 
 
         if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(surname) || 
@@ -50,7 +49,6 @@ public partial class Register : Page
         RegisterUser(name, surname, email, password, role); 
     }
     
-    // Tato metoda musí být propojená v XAML (viz níže)
     private void RoleMenuItem_Click(object sender, RoutedEventArgs e)
     {
         if (sender is MenuItem item)
