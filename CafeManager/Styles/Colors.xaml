@@ -29,4 +29,10 @@
     <SolidColorBrush x:Key="PersSettBtnClrBrush" Color="{StaticResource PersonalSettingsBtnColor}"/>
     <Color x:Key="PersonalSettingsBtnHoverColor">#2563EB</Color>
     <SolidColorBrush x:Key="PersSettBtnClrHoverBrush" Color="{StaticResource PersonalSettingsBtnHoverColor}"/>
+    
+    <!-- Colors for sidebar btns -->
+    <Color x:Key="SidebarBtnsColor">#316EF9</Color>
+    <SolidColorBrush x:Key="SidebarBtnsBrush" Color="{StaticResource SidebarBtnsColor}"/>
+    <Color x:Key="SidebarBtnsColorHover">#4D72F7</Color>
+    <SolidColorBrush x:Key="SidebarBtnsHoverBrush" Color="{StaticResource SidebarBtnsColorHover}"/>
 </ResourceDictionary>
