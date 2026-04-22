@@ -15,10 +15,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8d46b6d2-a412-4607-b7d0-0607e4c38323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CafeManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CafeManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/Pages/Login.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Login.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafeManager/Pages/Menu.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Pages/Menu.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CafeManager/SideBar/SideBar.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/SideBar/SideBar.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafeManager/Styles/Colors.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Styles/Colors.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CafeManager/Styles/SideBarStyles.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/Styles/SideBarStyles.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CafeManager/SideBar/SideBar.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CafeManager/SideBar/SideBar.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,8 @@
     <setting file="file://$PROJECT_DIR$/CafeManager/Pages/Menu.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CafeManager/Pages/register.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CafeManager/SideBar/SideBar.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CafeManager/Utils/SessionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CafeManager/ViewModels/UsersViewModel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -119,7 +121,8 @@
       <workItem from="1775034756064" duration="2532000" />
       <workItem from="1775041958173" duration="4650000" />
       <workItem from="1775628124666" duration="19584000" />
-      <workItem from="1776232936651" duration="5572000" />
+      <workItem from="1776232936651" duration="5626000" />
+      <workItem from="1776837891953" duration="3315000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -185,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775651217559</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="sidebar styles - almost done, fixed several bugs that made the app crash">
+      <option name="closed" value="true" />
+      <created>1776257067131</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1776257067132</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +225,8 @@
     <MESSAGE value="almost finished styles for login and register - added next page menu for future app" />
     <MESSAGE value="Registration and Login is Working" />
     <MESSAGE value="not working SideBar - ChangeChangeBtn style - crashing" />
-    <option name="LAST_COMMIT_MESSAGE" value="not working SideBar - ChangeChangeBtn style - crashing" />
+    <MESSAGE value="sidebar styles - almost done, fixed several bugs that made the app crash" />
+    <option name="LAST_COMMIT_MESSAGE" value="sidebar styles - almost done, fixed several bugs that made the app crash" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
